@@ -1,8 +1,8 @@
 <div class="col-md-12">
-  <img src="https://images.unsplash.com/photo-1525093505341-06e6006ff576?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=244aea8bfdbef0efb10004a95ee41156&auto=format&fit=crop&w=1350&q=80" alt="" class="img-responsive w-100" style="max-height: 300px;">
+  <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-responsive w-100" style="max-height: 370px;">
 </div>
 <div class="col-md-12 d-flex justify-content-between mt-2">
-  <h4 class="mt-2">Name Recipe</h4>
+  <h4 class="mt-2">{{ recipe.name }}</h4>
   <div class="btn-group">
       <button class="btn btn-primary dropdown-toggle">
         Manage Recipe <span class="caret"></span>
@@ -18,7 +18,7 @@
   
 </div>
 <div class="col-md-12">
-    <p class="text-justify">Descrioption</p>
+    <p class="text-justify">{{ recipe.description }}</p>
 </div>
 <div class="col-md-12">
   Ingredients
